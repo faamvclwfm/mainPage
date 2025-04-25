@@ -33,7 +33,7 @@
 }
 
 nav{
-    height: 10vh; z-index: 1;
+    height: 15%; z-index: 1;
     padding: 10px;
     background-color: white;
     display: flex;
