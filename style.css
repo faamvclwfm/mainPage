@@ -1,17 +1,18 @@
 *{
     margin: 0;
     font-family: 'Poppins';
+    box-sizing: border-box;
 }
 
 .mainSection{
-    height: 50vh;
+    height: 100vh;
 
     position: relative;
 }
 .mainSection::after{
     content: ' ';
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,8 +21,8 @@
     z-index: 0;
 }
 #myVideo {
-    width: 100%;
-   height: 50vh;
+    width: 100vw;
+   height: 100vh;
    filter: blur(2px);
    object-fit: cover;
    position:static;
@@ -36,7 +37,7 @@ nav{
     height: 2vh; z-index: 1;
     padding: 40px;
     background-color: white;
-    width: 100%;
+    width: 100vw;
 }
 .informationContainer{
     height: 500px;
