@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.mainSection{
+    height: 60vh;
+    position: relative;
+}
+.mainSection::after{
+    content: ' ';
+    width: 100vw;
+    height: 173%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(161, 196, 253,1),  rgba(194, 233, 251, 0.9), rgba(251, 194, 238,0.7), rgba(251, 249, 194,0.6));
+    opacity: 0.8;
+    z-index: 0;
+}
+#myVideo {
+    width: 100%;
+   height: 60rem;
+   filter: blur(4px);
+   object-fit: cover;
+   position:sticky;
+   size: 100%;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+}
+
+nav{
+    height: 2vh; position: absolute; z-index: 1;
+    padding: 40px;
+    background-color: white;
+    width: 100%;
+}
+.informationContainer{
+    height: 500px;
+    margin-top: 23rem;
+    z-index: 1;
+    padding: 40px;
+    background-color: white;
+    width: 100%;
+
+}
