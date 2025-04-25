@@ -5,21 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192-removebg-preview.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
     <title>Vocabulary Test</title>
 </head>
 <body>
     <nav >
-        test
+        <div class="leftNav">
+            <img src="android-chrome-192x192-removebg-preview.png">
+            <ul>
+                <li>Learn more</li>
+                <li>Theory page</li>
+                <li>Contact us</li>
+            </ul>
+            
+                <img class="moreElement" src="menu-burger.png" onclick="additionalOptions(event)" />
+                <div class="additionalOptionCard" id="additionalOptioncard">
+                    <ul id="additionalList">
+                        <li>Learn more</li>
+                        <li>Theory page</li>
+                        <li>Contact us</li>
+                    </ul>
+                    <img src="cross.png" onclick="closeAdditionalOption()">
+                </div>
+                
+        </div>
+        <a href="test.html" class="  bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-4 px-10 rounded-2xl font-semibold text-xl shadow-lg hover:shadow-xl hover:from-blue-600 hover:to-indigo-700 transition">Practise!</a>
     </nav>
     <main class="mainSection">
         <video autoplay muted loop id="myVideo">
             <source src="dictionary.mp4"  type="video/mp4">
         </video>
+        <div class="textArea">
+            <h1>Can't learn words? </h1>
+            <p>Try our service!</p>
+            <p class="benefitsText">Use our theory cards to memorize words - translation, pronunciation, examples and even pictures, thus you could learn vocabulary much faster!</p>
+        </div>
+        
     </main>
     <section>
         <div class="informationContainer">
-            kokoshke
+            <a routerLink="test.html">a</a>
         </div>
     </section>
+    <script src="script1.js">
+
+    </script>
 </body>
 </html>
