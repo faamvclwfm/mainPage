@@ -67,12 +67,12 @@ nav img{
 .leftNav{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 20px;
 }
 .leftNav ul{
     list-style-type: none;
     display: flex;
-    gap: 1rem;
+    gap: 10px;
     align-items: center;
 }
 .benefitsText{
