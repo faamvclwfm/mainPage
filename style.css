@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
-.mainSection{
-    height: 100vh;
+a{
+    text-decoration-line: none;
+    color: inherit;
+    cursor: pointer;
+}
 
+.mainSection{
+    height: 100%;
     position: relative;
 }
 .mainSection::after{
@@ -122,15 +127,28 @@ nav img{
 }
 
 .cardMethod{
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 25px;
+    align-items: center;
+    width: 500px;
     height: 450px;
     padding: 40px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 15px 2px rgba(189, 188, 188, 0.657);
 }
+.cardMethod img{
+    height: 130px;
+    
+}
 .cardMethod h2{
     font-size: 28px;
+}
+
+.cardMethod p{
+    font-size: 16px;
 }
 
 .cardsContainer{
