@@ -45,11 +45,15 @@ nav img{
     height: 50px;
 }
 .informationContainer{
-    height: 500px;
+    height: fit-content;
     z-index: 1;
-    padding: 20px;
-    background-color: white;
+    padding: 40px;
+    background-color: #fafafa;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 
 }
 .textArea{
@@ -101,12 +105,39 @@ nav img{
     display: none;
 }
 
+.informationContainer h1{
+    font-size: 46px;
+    font-weight: 500;
+}
+
 @media screen and (max-width:640px) {
     .moreElement{
         display: block;
+        
     }
     .leftNav ul{
         display: none;
         
     }
+}
+
+.cardMethod{
+    width: 400px;
+    height: 450px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px 2px rgba(189, 188, 188, 0.657);
+}
+.cardMethod h2{
+    font-size: 28px;
+}
+
+.cardsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 2rem;
+    max-width: 90%;
+    flex-wrap: wrap;
 }
