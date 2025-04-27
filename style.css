@@ -194,6 +194,7 @@ nav img{
 .textAreaTheory{
     padding: 20px;
     background-color: white;
+    margin:0 20px;
     border-radius: 20px;
     max-height: 400px;
     position: absolute;
@@ -212,10 +213,17 @@ nav img{
     padding: 20px 20px 20px 0;
     max-width: 450px;
 }
+
+@media screen and (max-width:1499px) {
+    .textAreaTheory{
+        background-color: #fafafa;
+    }
+}
+
 @media screen and (max-width:985px) {
     .textAreaTheory{
         font-size:46px;
-        margin:0 20px;
+        
     }
 }
 @media screen and (max-width:910px) {
