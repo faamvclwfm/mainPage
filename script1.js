@@ -17,3 +17,30 @@ function closeAdditionalOption(){
     const card=document.getElementById('additionalOptioncard')
     card.style.display='none'
 }
+
+const Carousel=document.getElementById('carousel')
+const nextbutton=document.getElementById('nextButton')
+const previousbutton=document.getElementById('previousButton')
+
+const cardsMove=setInterval(()=>{
+    Carousel.scrollBy({
+        left:130
+    })
+},7500)
+
+
+nextbutton.addEventListener('click',()=>{
+    Carousel.scrollBy({
+        left:130
+    })
+    clearInterval(cardsMove)
+})
+
+previousbutton.addEventListener('click',()=>{
+    Carousel.scrollBy({
+        left:-130
+    })
+    clearInterval(cardsMove)
+})
+
+

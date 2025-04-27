@@ -194,7 +194,7 @@ nav img{
 .textAreaTheory{
     padding: 20px;
     background-color: white;
-    margin:0 20px;
+    margin:20px 20px;
     border-radius: 20px;
     max-height: 400px;
     position: absolute;
@@ -286,4 +286,46 @@ nav img{
         position:static;
         align-self: flex-end;
     }
+}
+
+.opportunitiesPage{
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.carousel{
+    width: 100vw;
+    display: flex;
+    gap: 230px;
+    padding:0 170px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+
+}
+.carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.carousel > div{
+    content: ' ';
+    background-color: #ccc;
+    padding: 200px 160px;
+    scroll-snap-align: center;
+}
+
+.carouselButton{
+    width: 100px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(45deg, #4526c1, #e077f5);
 }
