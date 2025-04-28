@@ -254,12 +254,7 @@ nav img{
         font-size: 14px;
     }
 }
-@media screen and (max-width:430px) {
-    .textAreaTheory{
-        font-size:18px;
-        left: 5px;
-    }
-}
+
 @media screen and (max-width:325px) {
     .textAreaTheory{
         font-size:15px;
@@ -298,27 +293,46 @@ nav img{
 }
 
 
-.carousel{
+.carousel {
     width: 100vw;
     display: flex;
     gap: 230px;
-    padding:0 170px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    
-
+    padding: 0; 
 }
+
 .carousel::-webkit-scrollbar {
     display: none;
-  }
+}
 
-
-.carousel > div{
-    content: ' ';
+.carousel > div {
     background-color: #ccc;
     padding: 200px 160px;
     scroll-snap-align: center;
+}
+
+
+.spacer {
+    flex: 0 0 calc((100vw - 320px) / 2); 
+    pointer-events: none; 
+    padding: 0;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        gap: 50px;
+    }
+
+    .carousel > div {
+        padding: 100px 60px;
+    }
+
+    .spacer {
+        flex: 0 0 calc((100vw - 180px) / 2); /* менша картка = інший розрахунок */
+    }
 }
 
 .carouselButton{
@@ -328,4 +342,57 @@ nav img{
     border-radius: 10px;
     color: white;
     background: linear-gradient(45deg, #4526c1, #e077f5);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0 auto;
+  }
+  
+.container div{
+    padding:40px;
+    border-radius: 15px;
+    background-color: #ccc;
+}
+  .item:nth-child(1),
+  .item:nth-child(5) {
+    height: 32%;
+    width: 40%;
+  }
+  
+  .item:nth-child(2) {
+    height: 32%;
+    width: 20%;
+  }
+  
+  .item:nth-child(3),
+  .item:nth-child(6) {
+    height: 32%;
+    width: 30%;
+    flex-grow: 1;
+  }
+  
+  .item:nth-child(4) {
+    height: 32%;
+    width: 25%;
+  }
+  .item:nth-child(7) {
+    height: 32%;
+    width: 100%;
+  }
+
+  @media screen and (max-width:430px) {
+    .textAreaTheory{
+        font-size:18px;
+        left: 5px;
+    }
+    .container{
+        display: none;
+    }
 }
