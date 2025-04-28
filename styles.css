@@ -134,6 +134,32 @@
     }
 }
 
+
+
+
+
+.backHomeButton {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #00c3ff, #0078ff);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.backHomeButton:hover {
+    background: linear-gradient(45deg, #0078ff, #00c3ff);
+    transform: scale(1.05);
+}
+
 @media screen and (max-width: 800px) {
     .mainSection {
         flex-direction: column;
@@ -157,28 +183,9 @@
         padding: 1.25rem 1.5rem;
         margin-bottom: 1.25rem;
     }
-}
-
-
-
-.backHomeButton {
-    margin-top: 30px;
-    padding: 12px 24px;
-    background: linear-gradient(45deg, #00c3ff, #0078ff);
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    border: none;
-    border-radius: 12px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
-}
-
-.backHomeButton:hover {
-    background: linear-gradient(45deg, #0078ff, #00c3ff);
-    transform: scale(1.05);
+    .backHomeButton{
+        position:unset;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 }
