@@ -64,7 +64,7 @@ nav img{
 }
 .textArea{
     position: absolute;
-    top: 30%;
+    top: 120px;
     left: 5%;
     color: white;
     z-index: 1;
