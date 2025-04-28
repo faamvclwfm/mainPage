@@ -24,9 +24,9 @@ const previousbutton=document.getElementById('previousButton')
 
 const cardsMove=setInterval(()=>{
     Carousel.scrollBy({
-        left:130
+        left:260
     })
-},7500)
+},9500)
 
 
 nextbutton.addEventListener('click',()=>{
