@@ -244,16 +244,7 @@ nav img{
         
     }
 }
-@media screen and (max-width:530px) {
-    .textAreaTheory{
-        font-size:24px;
-        left: 5px;
-        
-    }
-    .textAreaTheory p{
-        font-size: 14px;
-    }
-}
+
 
 @media screen and (max-width:325px) {
     .textAreaTheory{
@@ -297,6 +288,7 @@ nav img{
     width: 100vw;
     display: flex;
     gap: 230px;
+    position: relative;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -321,19 +313,7 @@ nav img{
     background-color: white;
 }
 
-@media (max-width: 768px) {
-    .carousel {
-        gap: 50px;
-    }
 
-    .carousel > div {
-        padding: 100px 60px;
-    }
-
-    .spacer {
-        flex: 0 0 calc((100vw - 180px) / 2); /* менша картка = інший розрахунок */
-    }
-}
 
 .carouselButton{
     width: 100px;
@@ -358,12 +338,13 @@ nav img{
 .container div{
     padding:40px;
     border-radius: 15px;
-    background-color: #ccc;
+    background: linear-gradient(290deg,#262bc1,#e077f5);
 }
   .item:nth-child(1),
   .item:nth-child(5) {
     height: 32%;
     width: 40%;
+    background: linear-gradient(290deg,#e077f5,#262bc1);
   }
   
   .item:nth-child(2) {
@@ -394,5 +375,46 @@ nav img{
     }
     .container{
         display: none;
+    }
+}
+
+.arrowSection{
+    display: flex;
+    height: 100%;
+    width: 385rem;
+    position: absolute;
+    left: 17rem;
+    justify-content: space-between;
+    opacity: 0.3;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .carousel {
+        gap: 50px;
+    }
+
+    .carousel > div {
+        padding: 100px 60px;
+    }
+
+    .spacer {
+        flex: 0 0 calc((100vw - 180px) / 2); /* менша картка = інший розрахунок */
+    }
+    .arrowSection{
+        left: 5rem;
+        width: 125rem;
+    }
+}
+@media screen and (max-width:530px) {
+    .textAreaTheory{
+        font-size:24px;
+        left: 5px;
+        
+    }
+    .textAreaTheory p{
+        font-size: 14px;
+    }
+    .arrowSection{
+        left: 2rem;
     }
 }
