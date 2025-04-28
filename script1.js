@@ -1,17 +1,18 @@
-function additionalOptions(event){
-    const card=document.getElementById('additionalOptioncard')
-    const ul=document.getElementById('additionalList')
-    ul.style.display='block'
-    card.style.display='flex'
-    card.style.justifyContent='space-between'
-    card.style.position='fixed'
-    card.style.zIndex='1'
-    var x = event.clientX;     // get the horizontal coordinate
-    var y = event.clientY; 
+function additionalOptions() {
+    const card = document.getElementById('additionalOptioncard');
+    const ul = document.getElementById('additionalList');
+    
+    ul.style.display = 'block';
+    card.style.display = 'flex';
+    card.style.justifyContent = 'space-between';
+    card.style.position = 'fixed';
+    card.style.zIndex = '1000';
 
-    card.style.left = x + "px";
-    card.style.top = y + "px";
+    // Фіксоване положення меню, наприклад, справа зверху
+    card.style.left = 'calc( 220px -10% )'; /* 220px — ширина меню */
+    card.style.top = '100px'; /* відступ від верху */
 }
+
 
 function closeAdditionalOption(){
     const card=document.getElementById('additionalOptioncard')
